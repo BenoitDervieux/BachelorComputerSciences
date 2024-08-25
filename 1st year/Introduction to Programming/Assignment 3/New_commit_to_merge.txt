@@ -1,0 +1,2 @@
+This file has been created to be able to commit a new file and then merge request for submitting the assignment.
+A previous MR was created first.

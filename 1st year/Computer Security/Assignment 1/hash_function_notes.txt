@@ -1,0 +1,25 @@
+Hashing notes
+All the other algorithm were about comparing and get the answer yes or true
+
+Division method is about using modulus
+A lot of collisions but good performance
+
+Non-deterministic hash function = use random one
+
+Universal hash function satisfies universal hash properties
+hash(k) = (((ak + b) mod p) mod m)
+
+takes a and b inferior to the size of the input. k is a constant. P is a big prime. m is the size i want
+
+Property of universality => the probability to have collision is <= 1/m for all any 2 different 2 keys ion my universe.
+It's a measure of how well distributed things are.
+The length is expected to be constant.
+
+Indicator random variable = variable 
+
+Xij over choice of h function in the hash fanily. Xij = 1 if h(ki) = h(kj), 0 otherwise.
+Size of chain at h(ki) = Xi = sum over j= 0 to u-1 of Xij
+
+Expected value h appartient à H, {Xi} = Expected sum j of Xij
+
+
