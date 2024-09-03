@@ -40,16 +40,47 @@ public class Exercise12 {
         for (int i = 0; i < row.size(); i++) {
             for (int j = 0; j < row.size(); j++) {
                 ArrayList<Character> buff = new ArrayList<>();
-                buff.add(row.get(i).get(j));
                 int p = i;
                 int q = j;
-                while (p < row.size()  || q < row.size()) {
+                while(true) {
+                    if (p == row.size() || q == row.size()) {
+                        break;
+                    }
+                    buff.add(row.get(p).get(q));
                     p++;
                     q++;
-                    buff.add(row.get(p).get(q));
-                } 
+                }
                 if (buff.size() > 1) {
+                    ArrayList<Character> reverse = new ArrayList<>();
+                    for (int k = buff.size() - 1; k > -1; k--) {
+                        reverse.add(buff.get(k));
+                    }
                     words.add(buff);
+                    words.add(reverse);
+                }
+            }
+        }
+        System.out.println("The second part...");
+        for (int i = row.size() - 1; i >-1; i--) {
+            for (int j = 0; j < row.size(); j++) {
+                ArrayList<Character> buffDown = new ArrayList<>();
+                int p = i;
+                int q = j;
+                while(true) {
+                    if (p < 0 || q == row.size()) {
+                        break;
+                    }
+                    buffDown.add(row.get(p).get(q));
+                    p--;
+                    q++;
+                }
+                if (buffDown.size() > 1) {
+                    ArrayList<Character> reverseDown = new ArrayList<>();
+                    for (int k = buffDown.size() - 1; k > -1; k--) {
+                        reverseDown.add(buffDown.get(k));
+                    }
+                    words.add(buffDown);
+                    words.add(reverseDown);
                 }
             }
         }
