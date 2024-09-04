@@ -1,0 +1,1 @@
+print([x + sum([p for p in range(0, x - 1, 2)]) for x in range(0, 20, 2)])
