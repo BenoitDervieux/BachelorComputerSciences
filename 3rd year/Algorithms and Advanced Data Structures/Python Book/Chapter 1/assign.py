@@ -1,0 +1,10 @@
+michel = 55
+pedro = michel
+print("Michel : {0}".format(michel))
+print("Pedro : {0}".format(pedro))
+pedro += 5
+print("Michel : {0}".format(michel))
+print("Pedro : {0}".format(pedro))
+michel += 10
+print("Michel : {0}".format(michel))
+print("Pedro : {0}".format(pedro))
