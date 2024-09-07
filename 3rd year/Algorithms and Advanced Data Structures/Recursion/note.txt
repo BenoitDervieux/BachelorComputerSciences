@@ -1,0 +1,46 @@
+Link: https://www.youtube.com/watch?v=IJDJ0kBx2LM&t=42s
+
+Notes: 
+Recursion is like asking someone on a queue which number they are instead of counting them directly
+We are calling ourselves in recursion.
+
+Recursion is a method that calls itself. Some condition in some point in time should be hit.
+
+Tradeoffs:
+Pros : bridge gap between elegance and complexity. Reduce need for complex loops and auxiliary data structures. Reduce time complexity easily memoization.
+works really well with recursive structures like trees and graphs.
+Cons : memory usage, time complexity, slow due to CPU overhead. Can lead to out of memory errors/stack overflows. Can be unecessarily complex if poorly constructed.
+
+Call Stack - How memory works
+Stack overflow --> exceed invocation of stack. This is why we need a base case, we need to return a value to stop invoking method.
+We need a base case.
+
+Recursion with Strings
+1- We need to have our best a.k.a. when can I no longer continue? Need to think what is the smallest unit I can reverse? Here is the empty string or 1 letter.
+2- Between each invocation, what is the small unit I can reverse?
+Then I ask myself, what's the smallest unit of work I can do to contribute to the goal? Pick a single character and continue.
+
+Recursion with numbers
+Decimal to Binary -- Example 233 // 2 = 116 remainder = 1, then 116 // 2 = 58 rem = 0 ....
+Taking all the remainder 11101001 and this can be made recursive
+
+Sum of natural numbers
+Add all the number from a range
+
+Divide and Conquer
+1 - Divide problem into several smaller subproblems. Normally, the subproblems are similar to the original.
+2 - Conquer the subproblems by solving them recursively. Base case: solve small enough problems by brute force
+3 - Combine the solutions to get a solution to the subproblems and finally a solution to the original problem.
+4 - Divide and Conquer alrogithms are normally recursive.
+
+Binary Search
+Fibonacci
+
+Merge Sort
+Take unsorted values --> keep deviding and then sort the values. ## Study the algorithm
+
+- Linked List Reversal
+- Merge two sorted linked lists
+- Trees
+- Graphs: Depth First Search
+- Memoization & Caching

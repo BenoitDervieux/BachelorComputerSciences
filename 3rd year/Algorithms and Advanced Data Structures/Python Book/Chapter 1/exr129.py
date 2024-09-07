@@ -16,25 +16,26 @@ test = ['c', 'a', 't', 'd', 'o']
 #     if (len(liste_base) != 0):
 #         add_letter(index, liste_base, liste_mots)
 #     return liste_mots
-test = ['a', 'b', 'c', 'd']
-def zeubi(n, liste_de_mots, stri='', size=0):
-    if (size == 0):
-        size = len(n)
-    for i in range(len(n)):
-        stri += n[i]
-        print(n[i], end=' - ')
-        print('length:', len(n))
-        copy = []
-        for p in range(len(n)):
-            if n[p] != n[i]:
-                copy.append(n[p])
-        if (len(n)) == 1:
-            liste_de_mots.append(stri)
-            stri = stri[:-1]
-            return
+test = ['c', 'a', 't', 'd', 'o']
+
+def output_strings(liste, tmp=""):
+    if len(liste) == 1:
+        tmp += liste[0]
+        print(tmp)
+        if len(tmp) == 1:
+            return ""
+        return tmp[:-1]
+    for i in range(len(liste)):
+        tmp += liste[i]
+        copy=[]
+        for p in range(len(liste)):
+            if liste[p] != liste[i]:
+                copy.append(liste[p])
+        tmp = output_strings(copy, tmp)
+        if len(tmp) == 1:
+            tmp = ""
         else:
-            zeubi(copy, liste_de_mots, stri, size)
-    return liste_de_mots
-        
-liste_de_mots = []
-print(zeubi(test, liste_de_mots))
+            tmp = tmp[:-1]
+    return tmp
+
+output_strings(test)
