@@ -1,0 +1,18 @@
+# The number of operations executed by algorithms A and B is 8nlog n and
+# 2n^2, respectively. Determine n0 such that A is better than B for n ≥ n0.
+
+A is better than B means that 8n*log(n) >= 2n^2
+We have 8n log n is O(n*log(n)) and 2n^2 is O(n^2)
+If we plot, we see that it's around 17 iterations that 2n^2 is better than 8n*log(n)
+Let's try to explain that mathematically
+
+8n*log(n) >= 2n^2 
+<=> n*log(n) >= 1/4*n^2
+<=> log(n) >= 1/4*n
+<=> 0 >= 1/4 * n - log(n)
+
+After hint:
+8n*log(n) = 2*n^2
+<=> 4n*log(n) = n^2
+<=> 4*log(n) = n
+<=>log(2^4) * log(n) = n
