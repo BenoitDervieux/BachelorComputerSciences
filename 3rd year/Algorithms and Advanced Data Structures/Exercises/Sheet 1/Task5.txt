@@ -1,0 +1,14 @@
+    print1(List L)
+1: for i = 0, i < L.size(), i + + do --> O(n)
+2:      print (L[i]) --> O(1)
+3: end for
+
+Runtime is n * O(1), asymptotic runtime is O(n)
+
+
+    print2(List L)
+1: for i = 0, i < L.size(), i = i + 2 do --> O(1/2 * n)
+2:      print (L[i]) --> O(1)
+3: end for
+
+Runtime is 1/*n * O(1), asymptotic runtime is O(n)

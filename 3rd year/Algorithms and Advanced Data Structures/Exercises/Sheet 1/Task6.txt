@@ -1,0 +1,10 @@
+    factorial(int n)
+1: if n < 0 then --> O(1)
+2:      return -1 --> O(1)
+3: else if n == 0 then --> O(1)
+4:      return 1 --> O(1)
+5: else --> O(1)
+6:      return n · f actorial(n − 1) --> O(1)
+7: end if
+
+The runtime is O(1) for all the operations but it is called n times, so the runtime is O(n)

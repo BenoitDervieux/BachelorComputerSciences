@@ -1,0 +1,8 @@
+    printUnorderedPairs(List V )
+1: for i = 0, i < V.size(), v + + do -->O(n)
+2:      for j = i + 1, i < V.size(), v + + do -->O(n)
+3:          print (V [i]+”-”+V [j]) -->O(1)
+4:      end for
+5: end for
+
+Because of two nested loops, the asymptotic runtime is then O(n^2)

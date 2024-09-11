@@ -1,0 +1,19 @@
+First
+
+k^n is O(c^k) why not but it's a big limit
+k^n is Ω(c^k) no and it's easy to prove
+k^n is Θ(c^k) no because there aren't constants that can have boundaries for k^n if under the form c^k
+
+Second
+
+log2(n) ∈ O(log8(n))
+for n > 1, log2(n) <= 1/3 * log2(n) <= log8(n)
+So log2(n) is O(log8(n))
+
+log2(n) ∈ Ω(log8(n))
+for n > 1, log2(n) >= 1/3 * log2(n) >= log8(n)
+So log2(n) is Ω(log8(n))
+
+log2(n) ∈ Θ(log8(n))
+We can find 2 constants where c*log8(n) >= log2(n) >= c' * log8(n)
+So log2(n) is Θ(log8(n))
