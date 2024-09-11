@@ -6,5 +6,6 @@ def reverse(S, start, stop):
 
 
 test = [1,2,3,4,5,6,7,8,9,10]
+test = [4, 3, 6, 2, 6]
 
-print(reverse(test, 0, 10))
+print(reverse(test, 0, 5))
