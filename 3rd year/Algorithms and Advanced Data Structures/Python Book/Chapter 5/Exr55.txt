@@ -1,0 +1,5 @@
+Let's use the same example than the book is using, from 7 to 15 places.
+Let's calculate how much it would need: 
+16 places times 3 cyber dollars, so 48 cyber dollars that should be accumulated between the 4th place and the 7th place.
+This equals to 12 cyber dollar for each place.
+Which would be 6 times more costly than the first implementation.
