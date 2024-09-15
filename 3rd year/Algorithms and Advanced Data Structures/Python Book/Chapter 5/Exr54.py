@@ -32,12 +32,22 @@ class DynamicArray:
     def _make_array(self, c):
         return (c* ctypes.py_object)( )
 
+    def missing(self):
+        found = [False] * len(self)
+        for val in self:
+            if found[val]:
+                return val
+            else:
+                found[val] = True
+
 array = DynamicArray()
 for i in range(10):
     array.append(i)
+array.append(1)
 
 # for i in range(10):
 #     print(array.__getitem__(i))
     
-for i in range(-1, -11, -1):
-    print(array.__getitem__(i))
+# for i in range(-1, -11, -1):
+#     print(array.__getitem__(i))
+print(array.missing())

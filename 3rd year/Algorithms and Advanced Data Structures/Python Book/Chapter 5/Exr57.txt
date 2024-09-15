@@ -1,0 +1,8 @@
+To me, the first algorthm I am thinkin about is an algorithm that would add A[0] with A[1] to A[n - 1] and store the total in a hash list or another array.
+The other storing array could be empty and resize if the total is smaller and it would store every value att it's space otehrwise none.
+This has flaws but I don't really know other solution here.
+
+Well that was easier than that:
+We create an array of false first with the length of A.
+We iterate through the array,if the value is new, we put it True at the index of this array.
+If this is not new and it's already True, we return the value.
