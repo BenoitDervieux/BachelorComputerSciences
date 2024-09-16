@@ -1,0 +1,4 @@
+The number of real pop is 7 then.
+25 - 7 = 18
+
+There should be 18 elements

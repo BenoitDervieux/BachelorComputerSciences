@@ -1,0 +1,25 @@
+The list ADT has: 
+- Create :
+    Initialize a new array, with a fixed size and fill it with 0 or None, size can be 0 as well 
+    Initialize a "space" or "length" counter # O(1)
+    Initialize a "count" counter to keep trakc of how many elements there are in the list #O(1)
+
+- Empty :
+    return if count == 0 # Here it's O(1)
+
+- Count/len
+    return count # Here it's O(1)
+OR
+
+- Count/len:
+    initialize a variable to 0
+    iterate through all the elements, while the elements are not None, then add +1 to the variable
+    return the number of this variable # Here it is O(n)
+
+- Add value:
+    Check if the list is not full # O(1)
+    if the list is full, resize # O(n)
+    if not, go to the end of the list(or the choosen index) and add the value at choosen index.
+    Move all the next elements to their other position # O(n)
+
+    The upper bond of Add is O(n), the lower bond is O(1) if we already keep a reference to where to add the next element and if the array is not full.

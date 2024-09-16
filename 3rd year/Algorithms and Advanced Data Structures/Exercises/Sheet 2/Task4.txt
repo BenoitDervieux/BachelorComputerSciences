@@ -1,0 +1,12 @@
+It is not efficient to make repetitive calls because the upper bond can be pretty slow.
+
+Adding an element can have a O(n). Here, adding n new elements would then have a time complexity of n * O(n) which is O(n**2)
+
+This is why this isn't the best implementation.
+
+A better implementation would be to:
+1. Create a new array of size > initial array + array to implement
+2. Add the first part of the array before the i index
+3. Add the element we wanted to add
+4. add the last part of the initial array
+5. Replace the array inside the class by the new array
