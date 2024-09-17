@@ -35,11 +35,11 @@ class ArrayQueue:
         self._size += 1
     
     def _resize(self, cap):
-        old = self._data
-        self._data = [None] * cap
-        walk = self._front
+        old = self._data  #Buffer for the data
+        self._data = [None] * cap # Create new empty slots
+        walk = self._front # Buff for the self._front
         for k in range(self._size):
-            self._data[k] = old[walk]
+            self._data[k] = old[walk] # Replaced data where it was, up to
             walk = (1 + walk) % len(old)
         self._front = 0
     

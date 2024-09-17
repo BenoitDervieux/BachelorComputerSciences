@@ -1,0 +1,4 @@
+It should be 21, I don't know here.
+
+After looking at the solution, I understood a bit more, due to the circularity principle, everytime there is a dequeue, the front gains +1.
+As we saw previously, there were originally 10 efficient dequeue operations so the _front should be 10.

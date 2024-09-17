@@ -24,4 +24,4 @@ class ArrayStack:
     
     def print(self):
         for i in range(len(self._data)-1, -1, -1):
-            print(self._data[i])
+            print(self._data[i], end=' - ')

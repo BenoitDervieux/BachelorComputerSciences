@@ -1,0 +1,2 @@
+If among 15 dequeue operations, 5 led to raising an error, then it's only 10 dequeue operations.
+The the size of Q is 32 - 10 which is 22

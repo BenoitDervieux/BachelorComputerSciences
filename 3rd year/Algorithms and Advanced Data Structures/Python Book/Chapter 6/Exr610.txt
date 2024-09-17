@@ -1,0 +1,4 @@
+Whithout testing, I think this could lead to placing the elements in the wrong order.
+
+Let's say we have the previous sequence E - F - A - B - C - D 
+Then it would copy as it is rather than A - B - C - D - E - F
