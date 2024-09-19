@@ -1,0 +1,15 @@
+To swap 2 nodes in a linked list, what is possible to do is to
+1 - take a previous node before the two to swap
+2 - Access node1 and node2 to swap
+3 - Acces nextNode
+4 - Place prev.next = node2, node2.next = node1 and node1.next = nextNode
+
+To swap 2 nodes in a doubly linked list, it is possible to:
+1 - take a previous node before the two to swap
+2 - Access node1 and node2 to swap
+3 - Acces nextNode
+4 - Place prev.next = node2 and node2.prev = prev, 
+5- node2.next = node1 and node1.prev=node2 
+6 - node1.next = nextNode and nextNode.prev = node1
+
+The second methods takes more step which are still O(1) so it's sensibly the same time
