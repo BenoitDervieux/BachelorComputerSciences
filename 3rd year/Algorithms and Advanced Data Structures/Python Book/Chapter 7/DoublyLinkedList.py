@@ -54,13 +54,13 @@ class _DoublyLinkedBase:
     def find_middle_node(self):
         end = self._trailer
         beginning = self._header
-        while end == beginning or end._prev == beginning :
+        while end != beginning and end._prev != beginning :
             end = end._prev
             beginning = beginning._next
         return beginning._element
 
 test = _DoublyLinkedBase()
-for i in range(10):
+for i in range(1):
     test.append(i)
 
 test.printList()
