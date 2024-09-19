@@ -1,0 +1,5 @@
+Here it is just to describe:
+
+In order to find the middle without using a counter
+What we can do is to setup two nodes, one from the head, one from the tail and go to the center.
+By going next to the head nodes and prev to the tail node until the nodes are the same/referencing each other.

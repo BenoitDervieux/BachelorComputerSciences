@@ -1,0 +1,11 @@
+My answer: 
+Ok so the first thing I am thinking about is to take a reference of x, and then iterate through the circular list of x
+to check is y is appearing up until we come back to x.
+This would take at worst O(n).
+
+In another matter, we could as well to the same for the y circular linked list. 
+Then the total would be O(2n) so O(n).
+
+The answer: 
+Solution Starting at x. next, walk forward until either encountering x or y. If y is first reached, then they are in the same list; if x is first
+reach than y belongs to some other list.

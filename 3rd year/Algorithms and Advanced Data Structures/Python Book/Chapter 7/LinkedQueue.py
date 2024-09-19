@@ -41,5 +41,23 @@ class LinkedQueue:
             self._tail._next = newest
         self._tail = newest
         self._size += 1
-        
     
+    def rotate(self):
+        if self._size > 0:
+            # self._tail._next, self._head, self._tail = self._head, self._head._next, self._tail._next
+            self._head, self._tail._next = self._head._next, self._head
+            self._tail = self._tail._next 
+        
+
+
+test = LinkedQueue()
+
+for i in range(10):
+    test.enqueue(i)
+test.rotate()
+tout = test._head
+while True: 
+    print(tout._element)
+    tout = tout._next
+    if tout == test._tail._next:
+        break
