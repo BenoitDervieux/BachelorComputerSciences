@@ -1,0 +1,56 @@
+a : The minimum number of external node is h+1 according to page 315
+b : The maximum number of external nodes is 2^h according to page 315
+c : log(n + 1) - 1 <= h <= (n-1)/2
+d : Don't know
+
+
+Test 1
+
+                         0
+              /                       \
+             o                         o
+       /          \               /           \
+      o            o             o             o
+   /    \        /   \         /    \        /   \
+  o      o      o     o       o      o      o     o
+/  \    / \    / \   /  \    / \    / \    / \   / \
+o  o   o  o   o  o   o  o   o  o   o  o   o  o   o  o
+
+n = 31
+ne = 16
+ni = 15
+
+Test 2
+
+                         0
+              /                       \
+             o                         o
+       /          \               /           \
+      o            o             o             o
+   /    \                      /    \        /   \
+  o      o                    o      o      o     o
+                             / \    / \    / \   / \
+                            o  o   o  o   o  o   o  o
+n = 21
+ne = 11
+ni = 10
+
+Solution
+Proof
+Part 1: Lower Bound
+
+Base Case: For a tree with 1 node (height 0), log(2)-1 = 0 holds.
+Inductive Step: Assume the inequality holds for all trees with fewer than n nodes.
+A proper binary tree with n nodes has at least 2^h nodes (in the worst case, a complete binary tree).
+So, n ≥ 2^h.
+Taking the logarithm of both sides, we get log(n) ≥ h.
+Therefore, log(n+1)-1 ≤ log(n) ≤ h.
+Part 2: Upper Bound
+
+Base Case: For a tree with 1 node (height 0), (1-1)/2 = 0 holds.
+Inductive Step: Assume the inequality holds for all trees with fewer than n nodes.
+A proper binary tree with n nodes has at most 2^(h+1)-1 nodes (in the worst case, a complete binary tree with height h+1).
+So, n ≤ 2^(h+1)-1.
+Rearranging, we get 2^(h+1) ≥ n+1.
+Taking the logarithm of both sides, we get h+1 ≥ log(n+1).
+Therefore, h ≤ log(n+1)-1.

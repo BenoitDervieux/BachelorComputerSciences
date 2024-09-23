@@ -1,0 +1,2 @@
+So basically, the algorithm recursively calls the child, which makes it do that for n nodes.
+So the worst case runtime is O(n)

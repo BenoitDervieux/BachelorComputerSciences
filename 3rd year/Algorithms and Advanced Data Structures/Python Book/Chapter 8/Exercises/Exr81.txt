@@ -1,0 +1,22 @@
+a. The root node is: /user/rt/courses
+
+Internal nodes: Has 1 or more children
+External nodes: Do not have children, know as leaves
+b. The internal nodes are: /user/rt/courses, cs016/, cs252/, homeworks/, programs/, projects/ papers/, demos/
+
+Descendants: v is a descendant of u if u is an ancestor of v.
+c. CS016 has 9 descendants: grades, homeworks, hw1, hw2, hw3, programs/, pr1, pr2, pr3
+
+An ancestor is the file which are highers or equals.
+d. The node cs016/ has 2 ancestors: cs016 and /user/rt/courses
+
+The siblings are the node that share the same parents
+e. Siblings of homeworks/ are: grades and programs/
+
+f. The nodes in the subtree rooted at projects/ are: papers/, buylow, sellhig, demos/, market
+
+The depth of p is the number of ancestors of p, excluding p itself
+g. The depth of the node paper is 2.
+
+Height is max depth
+h. The height of the tree is 4.

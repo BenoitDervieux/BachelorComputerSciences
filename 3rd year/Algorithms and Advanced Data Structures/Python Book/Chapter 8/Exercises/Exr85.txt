@@ -1,0 +1,5 @@
+First we initialize a counter.
+Then the algorithm should visit all the nodes.
+In each node, there should be a method called is_leave that checks if the node is a leaf by counting the number of children of the node.
+Then, there should be a method that goes back to the parent and compare if the node we're in is left_sided.
+If yes, the counter should be increamented by 1.

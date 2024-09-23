@@ -1,0 +1,2 @@
+The running time is lower than the normal n of course because we are on a subpart of the tree.
+In the solution, they use the np which is lower than n, and the running time is then O(np)

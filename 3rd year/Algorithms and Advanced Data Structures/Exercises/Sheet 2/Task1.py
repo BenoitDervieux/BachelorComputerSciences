@@ -62,7 +62,7 @@ def mergeSort(A, start, end):
     return A
 
 superTest = [71,54,36,1,48,75,22,49,94,85,39,4,25]
-print(mergeSort(superTest, 0, 13))
+print(mergeSort(superTest, 0, 14))
 
 
 # A = [1,5,4,6,8]

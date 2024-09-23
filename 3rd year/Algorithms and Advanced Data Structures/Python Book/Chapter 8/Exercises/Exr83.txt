@@ -1,0 +1,4 @@
+Proposition 8.4: The height of a nonempty tree T is equal to the maximum of the depths of its leaf positions.
+
+Basically, we define the height by measuring the depth of the furthest leave from the root. So this proposition makes sense because
+1 : it has to be a leaf and 2 : we should take the downer leaf.

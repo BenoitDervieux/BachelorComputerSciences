@@ -1,0 +1,39 @@
+Internal nodes: nodes that has 1 or more children
+External nodes: nodes that do not have children
+
+Proper binary tree: 
+
+                         0
+              /                       \
+             o                         o
+       /          \               /           \
+      o            o             o             o
+   /    \        /   \         /    \        /   \
+  o      o      o     o       o      o      o     o
+/  \    / \    / \   /  \    / \    / \    / \   / \
+o  o   o  o   o  o   o  o   o  o   o  o   o  o   o  o
+
+here we have 15 internal and 16 external. Total = 29 nodes
+
+Improper binary tree.
+
+                         0
+              /                       \
+             o                         o
+       /          \               /           \
+      o            o             o             o
+   /             /   \         /    \        /   \
+  o             o     o       o      o      o     o
+/  \           / \   /       / \    /      / \   
+o  o           o  o o       o  o   o      o  o   
+
+n = 24
+External = 11
+Internal = 13
+
+minimum = 1
+Maximum = n/2
+
+Solution:
+A tree that is one long path will have n-1 internal nodes and 1 external node.
+A tree that is proper (and thus odd n) would have (n-1)/2 internal nodes and (n +1)/2 external nodes.

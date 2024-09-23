@@ -1,0 +1,13 @@
+Let T be an n-node binary tree that may be improper. Describe how to
+represent T by means of a proper binary tree T' with O(n) nodes.
+
+--> Didn't understood the question. GPT and pass.
+
+Steps:
+
+Create a new binary tree T': Initialize T' to be empty.
+Traverse T: Perform a preorder traversal of T.
+For each node v in T:
+Create a new node v' in T'.
+If v has a left child, create a new node in T' and make it the left child of v'.
+If v has a right child or only a left child, make the right_child_pointer of v' point to the corresponding child or null.
