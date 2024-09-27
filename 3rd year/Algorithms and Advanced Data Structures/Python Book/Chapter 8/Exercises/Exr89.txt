@@ -1,0 +1,45 @@
+ne = ni + 1
+
+Proof by induction
+
+Base:
+    if T is a tree of a root:
+    The root is ne, so ne = 1, and the ni are then 1 - 1 = 0. Then it holds.
+
+Inductive step (Do that again after the solution):
+    T is a proper binary tree and let's assume that ne = ni + 1.
+    We aim to add new nodes to T. We can't just add one, otherwise T won't be proper anymore, we need to add 2.
+    The two new nodes will become external ones, and the previous node, which was external, will become internal.
+    We than have ne - 1 + 2 = ni + 1 + 1
+    ne + 1 = ni + 2 
+    ne = ni + 1
+    So the proposition holds.
+
+
+solution : 
+
+Proof:
+
+Base Case:
+    A single-node tree (a root with no children) has 1 external node and 0 internal nodes. 
+    Thus, nE = 1 = 0 + 1 = nI + 1. The proposition holds for the base case.
+
+Inductive Hypothesis:
+    Assume the proposition holds for all proper binary trees with fewer than n nodes.
+
+Inductive Step:
+    Consider a proper binary tree T with n nodes. Let Tleft and Tright be the left and right subtrees of the root, respectively.
+
+    Case 1: Tleft and Tright are both empty.
+        In this case, T has only one node (the root), which is an external node. So, nE = 1 and nI = 0, satisfying the proposition.
+
+    Case 2: At least one of Tleft and Tright is nonempty.
+        Without loss of generality, assume Tleft is nonempty.
+        By the inductive hypothesis, Tleft has nEleft external nodes and nIleft internal nodes, such that nEleft = nIleft + 1.
+        The root of T becomes an internal node, increasing the count of internal nodes by 1.
+        The external nodes of T are the external nodes of Tleft and Tright.
+        Therefore, nE = nEleft + nEright, and nI = nIleft + nIright + 1.
+        Substituting nEleft = nIleft + 1 into the equation for nE, we get: nE = (nIleft + 1) + nEright nE = nIleft + nIright + 2 nE = (nIleft + nIright + 1) + 1 nE = nI + 1
+
+Conclusion:
+    In all cases, the proposition holds. Therefore, by strong induction, it holds for all nonempty proper binary trees.

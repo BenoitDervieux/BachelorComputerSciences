@@ -23,3 +23,11 @@ class BinaryTree(Tree):
             yield self.left(p)
         if self.right(p) is not None:
             yield self.right(p)
+    
+    def num_children(self, p):
+        numChildren = 0
+        if self.right(p) is not None:
+            numChildren += 1
+        if self.left(p) is not None:
+            numChildren += 1
+        return numChildren
